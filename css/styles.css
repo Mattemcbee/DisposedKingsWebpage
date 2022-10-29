@@ -1,0 +1,17 @@
+.nav-link
+{
+  font-family: 'helvetica', sans-serif;
+  color:grey;
+  font-size: 40px;
+  margin: 0 0 0 50px;
+  position: relative;
+  bottom: -20px;
+  
+}
+.outNow {
+  /* Background pattern from Toptal Subtle Patterns */
+  height: 1000px;
+  width: 100%;
+  background-image: "backGrey.jpg";
+  background-repeat: no-repeat;
+}

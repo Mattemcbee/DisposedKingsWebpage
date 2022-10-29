@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+
+  <title>Disposed Kings</title>
+</head>
+
+<body>
+
+  <!--navbar-->
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top py-0" style="background-color:#EFDAA5">
+    <div class="container">
+      <a class="navbar-brand py-0" href="index.html"><img src="knockout.jpg" width=100px height="auto"  /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#disposedNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="disposedNavbar">
+
+        <ul class="navbar-nav">
+          <li>
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="merch.html">Merch</a>
+          </li>
+          <li>
+            <a class="nav-link text-nowrap" href="#">Social Media</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- music out now -->
+  <div class="container-fluid">
+    <div class="row outNow">
+      <div class="col text-center">
+        <a href="google.com"><img class="img-thumbnail img-fluid m-10" src="albumArt.jpg" alt="album cover" /></a>
+        <div class="media-body align-self-center">
+          <p>Out Everywhere 10.20.2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--merch label-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="nav" id="merchLabel">
+        <p class="text-center">Merch</p>
+        <a href="merch.html">
+          <span class="hyperspan"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- merch preview -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4">
+        <div class="card nav" id="merch1" height=200px>
+          <img src="shirtBlack.jpg" alt="t-shirt" style="width:100%">
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool black shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card nav" id="merch2" height=200px>
+          <img src="shirtBrown.jpg" alt="t-shirt" style="width:100%">
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool brown shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card nav" id="merch3" height=200px>
+          <img src="shirtBlue.jpg" alt="t-shirt" style="width:100%">
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool blue shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <a role="button" class="btn btn-primary btn-sm" href="merch.html">more merch</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- show preview -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4">
+        <div class="card nav" id="merch1" height=200px>
+          <div class="container">
+            <h4><b>Oct 25th</b></h4>
+            <p class="d-none d-sm-block">canal club</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card nav" id="merch2" height=200px>
+          <div class="container">
+            <h4 class="text-nowrap"><b>Nov 23rd</b></h4>
+            <p class="d-none d-sm-block">The National</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card nav" id="merch3" height=200px>
+          <div class="container">
+            <h4 class="text-nowrap"><b>Dec 14th</b></h4>
+            <p class="d-none d-sm-block">Madison Square Garden</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <a role="button" class="btn btn-primary btn-sm" href="shows.html">upcoming shows</a>
+      </div>
+    </div>
+  </div>
+
+  <form>
+    <div class="form-group row">
+      <label for="email" class="offset-4 col-4 col-form-label text-center">Subscribe!</label>
+      <div class="offset-4 col-4">
+        <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="offset-4 col-4 text-center mt-2">
+        <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+      </div>
+    </div>
+    </div>
+    <div>
+  </form>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h5>Social</h5>
+          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a class="btn btn-social-icon btn-spotify" href="http://spotify.com/"><i class="fa fa-spotify"></i></a>
+        </div>
+        <div class="col text-center">
+          <h5>Contact</h5>
+          <a role="button" class="btn btn-link" href="tel:+5555555555"><i class="fa fa-phone"></i>555-555-5555</a><br />
+          <a role="button" class="btn btn-link" href="mailto:mail@mail.wack"><i
+              class="fa fa-envelope-o"></i>band@gmail.com</a><br />
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
