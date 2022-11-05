@@ -8,7 +8,9 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
+  <link rel="stylesheet"
+    href="https://fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhdXeFaxOedfTDw.woff2" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 
@@ -20,7 +22,7 @@
   <!--navbar-->
   <nav class="navbar navbar-expand-md navbar-dark sticky-top py-0" style="background-color:#EFDAA5">
     <div class="container">
-      <a class="navbar-brand py-0" href="index.html"><img src="knockout.jpg" width=100px height="auto"  /></a>
+      <a class="navbar-brand py-0" href="index.html"><img src="img/knockout.jpg" width=100px height="auto" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#disposedNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,7 +36,7 @@
             <a class="nav-link" href="merch.html">Merch</a>
           </li>
           <li>
-            <a class="nav-link text-nowrap" href="#">Social Media</a>
+            <a class="nav-link text-nowrap" href="shows.html">Shows</a>
           </li>
         </ul>
       </div>
@@ -43,11 +45,11 @@
 
   <!-- music out now -->
   <div class="container-fluid">
-    <div class="row outNow">
+    <div class="row outEverywhere">
       <div class="col text-center">
-        <a href="google.com"><img class="img-thumbnail img-fluid m-10" src="albumArt.jpg" alt="album cover" /></a>
+        <a href="google.com"><img class="img-thumbnail imgAlbumNew" src="img/albumArt.jpg" alt="album cover" /></a>
         <div class="media-body align-self-center">
-          <p>Out Everywhere 10.20.2022</p>
+          <p class="marginFont"><strong>Out Everywhere 10.20.2022</strong></p>
         </div>
       </div>
     </div>
@@ -55,65 +57,83 @@
 
   <!--merch label-->
   <div class="container-fluid">
-    <div class="row">
-      <div class="nav" id="merchLabel">
-        <p class="text-center">Merch</p>
-        <a href="merch.html">
-          <span class="hyperspan"></span>
-        </a>
+    <div class="row footerSocial">
+      <div class="col">
+        <div class="nav" id="merchLabel">
+          <p class="marginFont">Merch</p>
+          <a href="merch.html">
+            <span class="hyperspan"></span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- merch preview -->
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-4">
-        <div class="card nav" id="merch1" height=200px>
-          <img src="shirtBlack.jpg" alt="t-shirt" style="width:100%">
-          <div class="container">
-            <h4 class="text-nowrap"><b>$25</b></h4>
-            <p class="d-none d-sm-block">it's a cool black shirt</p>
+    <div class="row merchPreview">
+      <div class="row">
+        <div class="col-6 col-sm-4">
+          <div class="card nav" id="merch1" height=200px>
+            <img src="img/shirtBlack.jpg" alt="t-shirt" style="width:100%">
+            <div class="container">
+              <h4 class="text-nowrap"><b>$25</b></h4>
+              <p class="d-none d-sm-block">it's a cool black shirt</p>
+            </div>
+            <a href="http://www.google.com">
+              <span class="hyperspan"></span></a>
           </div>
-          <a href="http://www.google.com">
-            <span class="hyperspan"></span></a>
+        </div>
+        <div class="col-6 col-sm-4">
+          <div class="card nav" id="merch2" height=200px>
+            <img src="img/shirtBrown.jpg" alt="t-shirt" style="width:100%">
+            <div class="container">
+              <h4 class="text-nowrap"><b>$25</b></h4>
+              <p class="d-none d-sm-block">it's a cool brown shirt</p>
+            </div>
+            <a href="http://www.google.com">
+              <span class="hyperspan"></span></a>
+          </div>
+        </div>
+        <div class="d-none d-sm-block col-sm-4">
+          <div class="card nav" id="merch3" height=200px>
+            <img src="img/shirtBlue.jpg" alt="t-shirt" style="width:100%">
+            <div class="container">
+              <h4 class="text-nowrap"><b>$25</b></h4>
+              <p class="d-none d-sm-block">it's a cool blue shirt</p>
+            </div>
+            <a href="http://www.google.com">
+              <span class="hyperspan"></span></a>
+          </div>
         </div>
       </div>
-      <div class="col-4">
-        <div class="card nav" id="merch2" height=200px>
-          <img src="shirtBrown.jpg" alt="t-shirt" style="width:100%">
-          <div class="container">
-            <h4 class="text-nowrap"><b>$25</b></h4>
-            <p class="d-none d-sm-block">it's a cool brown shirt</p>
-          </div>
-          <a href="http://www.google.com">
-            <span class="hyperspan"></span></a>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card nav" id="merch3" height=200px>
-          <img src="shirtBlue.jpg" alt="t-shirt" style="width:100%">
-          <div class="container">
-            <h4 class="text-nowrap"><b>$25</b></h4>
-            <p class="d-none d-sm-block">it's a cool blue shirt</p>
-          </div>
-          <a href="http://www.google.com">
-            <span class="hyperspan"></span></a>
+      <div class="row text-center">
+        <div class="col text-center">
+          <a role="button" class="btn btn-outline-light btn-sm" href="merch.html">more merch</a>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col text-center">
-        <a role="button" class="btn btn-primary btn-sm" href="merch.html">more merch</a>
+  </div>
+  <!--show label-->
+  <div class="container-fluid">
+    <div class="row footerSocial">
+      <div class="col">
+        <div class="nav" id="showLabel">
+          <p class="marginFont">Upcoming Shows</p>
+          <a href="show.html">
+            <span class="hyperspan"></span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- show preview -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-4">
+  <div class="container-fluid showPreview">
+    <div class="row ">
+      <div class="col-6 offset-sm-1 col-sm-5">
         <div class="card nav" id="merch1" height=200px>
+          <img src="img/poster1.jpg" alt="show 1" style="width:100%" />
           <div class="container">
             <h4><b>Oct 25th</b></h4>
             <p class="d-none d-sm-block">canal club</p>
@@ -122,8 +142,9 @@
             <span class="hyperspan"></span></a>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-6 col-sm-5">
         <div class="card nav" id="merch2" height=200px>
+          <img src="img/poster1.jpg" alt="show 2" style="width:100%" />
           <div class="container">
             <h4 class="text-nowrap"><b>Nov 23rd</b></h4>
             <p class="d-none d-sm-block">The National</p>
@@ -132,59 +153,137 @@
             <span class="hyperspan"></span></a>
         </div>
       </div>
-      <div class="col-4">
-        <div class="card nav" id="merch3" height=200px>
+      <!--button-->
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <a role="button" class="btn btn-sm btn-outline-light" href="shows.html">More Shows</a>
+      </div>
+    </div>
+  </div>
+  <!--footer and socials background https://mdbootstrap.com/docs/standard/content-styles/animations/-->
+  <div class="container-fluid footerSocial" data-mdb-animation-on-scroll=" repeat" data-mdb-animation-reset="true"
+    data-mdb-animation="slide-in-up">
+    <form>
+      <div class=" form-group row">
+        <label for="email" class="d-none d-sm-block offset-2 col-8 col-form-label text-center helNue">Be the first to
+          know
+          about the latest Disposed Kings news!</label>
+        <label for="email" class="d-block d-sm-none offset-2 col-8 col-form-label text-center helNue">Sign up for
+          Disposed
+          Kings news!</label>
+        <div class="offset-4 col-4">
+          <input type="text" class="form-control form-control-outline-light" id="email" name="email"
+            placeholder="Email" />
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-4 col-4 text-center mt-2">
+          <button type="submit" class="btn btn-sm btn-outline-light">Subscribe</button>
+        </div>
+      </div>
+
+    </form>
+
+    <footer>
+      <div class="container">
+        <div class="row mt-10">
+          <div class="col text-center">
+            <a class="btn btn-social-icon btn-lg btn-instagram" href="http://instagram.com/"><i
+                class="fa fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-lg btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-lg btn-spotify" href="http://spotify.com/"><i class="fa fa-spotify"></i></a>
+            <a class="btn btn-social-icon btn-lg btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
+  </div>
+  <!--
+ 
+        <div class="row row-content m-0 p-0">
+            <div class="col">
+                <div id="topCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#topCarousel" data-slide-to="1"></li>
+                        <li data-target="#topCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            
+  <div class="container-fluid">
+    <div class="row outEverywhere">
+      <div class="col text-center">
+        <a href="google.com"><img class="img-thumbnail img-fluid m-10" src="img/albumArt.jpg" alt="album cover" /></a>
+        <div class="media-body align-self-center">
+          <p>Out Everywhere 10.20.2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                        <div class="carousel-item">
+                        <div class="container-fluid">
+    <div class="row">
+      <div class="offset-1 col-5">
+        <div class="card nav" id="merch1" height=200px>
+          <img src="img/shirtBlack.jpg" alt="t-shirt" style="width:100%">
           <div class="container">
-            <h4 class="text-nowrap"><b>Dec 14th</b></h4>
-            <p class="d-none d-sm-block">Madison Square Garden</p>
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool black shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="card nav" id="merch2" height=200px>
+          <img src="img/shirtBrown.jpg" alt="t-shirt" style="width:100%">
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool brown shirt</p>
           </div>
           <a href="http://www.google.com">
             <span class="hyperspan"></span></a>
         </div>
       </div>
     </div>
+</div>
+                        <div class="carousel-item">
+                            <div class="container-fluid">
     <div class="row">
-      <div class="col text-center">
-        <a role="button" class="btn btn-primary btn-sm" href="shows.html">upcoming shows</a>
-      </div>
-    </div>
-  </div>
-
-  <form>
-    <div class="form-group row">
-      <label for="email" class="offset-4 col-4 col-form-label text-center">Subscribe!</label>
-      <div class="offset-4 col-4">
-        <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
-      </div>
-    </div>
-    <div class="form-group row">
-      <div class="offset-4 col-4 text-center mt-2">
-        <button type="submit" class="btn btn-sm btn-primary">Submit</button>
-      </div>
-    </div>
-    </div>
-    <div>
-  </form>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <h5>Social</h5>
-          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+        <div class="col-10 media-body align-self-center">
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
           <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
           <a class="btn btn-social-icon btn-spotify" href="http://spotify.com/"><i class="fa fa-spotify"></i></a>
         </div>
-        <div class="col text-center">
-          <h5>Contact</h5>
-          <a role="button" class="btn btn-link" href="tel:+5555555555"><i class="fa fa-phone"></i>555-555-5555</a><br />
-          <a role="button" class="btn btn-link" href="mailto:mail@mail.wack"><i
-              class="fa fa-envelope-o"></i>band@gmail.com</a><br />
+        
+      </div>
+   <div class="col-2">
+          <p>Follow Us!</p>
         </div>
       </div>
     </div>
+  </div>
+</div>
+                    <a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#topCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
 
-  </footer>
+
+                </div>
+            </div>
+        </div> 
+                -->
 
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

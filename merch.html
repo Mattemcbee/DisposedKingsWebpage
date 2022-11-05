@@ -1,60 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags always come first -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-        <link rel="stylesheet" href="css/styles.css" />
-    
-        <title>Disposed Kings</title>
-    </head>
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Disposed Kings</title>
+</head>
 
 <body>
 
-    <div>
-        <nav class="navbar navbar-expand-md">
-            <img class="navbar-brand" src="bandTitle.jpg" width="100" height="100">
-            <ul class="navbar-nav">
-                <li>
-                    <a class="nav-link" href="#">Merch</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#">Social Media</a>
-                </li>
-            </ul>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top py-0" style="background-color:#EFDAA5">
+    <div class="container">
+      <a class="navbar-brand py-0" href="index.html"><img src="img/knockout.jpg" width=100px height="auto" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#disposedNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="disposedNavbar">
 
-        </nav>
+        <ul class="navbar-nav">
+          <li>
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link active" href="#">Merch</a>
+          </li>
+          <li>
+            <a class="nav-link text-nowrap" href="shows.html">Shows</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="card" height=200px>
-                    <img src="shirtBlack.jpg" alt="t-shirt" style="width:100%">
-                    <div class="container">
-                    <h4><b>$25</b></h4>
-                    <p>it's a cool black shirt</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="shirtBrown.jpg" alt="t-shirt" style="width:100%">
-                    <div class="container">
-                    <h4><b>$20</b></h4>
-                    <p>it's a cool brown shirt</p>
-                    </div>
-                </div>
-            </div>
-        
-                
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-   </body>
-   
-   </html>
+  </nav>
+  <!-- music out now -->
+  <div class="container-fluid">
+    <div class="row outEverywhere">
+      <div class="col-4 text-center">
+        <a href="google.com"><img class="img-thumbnail imgResponse" src="img/albumArt.jpg" alt="album cover" /></a>
+      </div>
+      <div class="col-8 align-bottom text-center">
+        <div class="marginFont">
+          <h3>This Isn't Music It's Garbage</h3>
+          <p>Out Everywhere 10.20.2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--clothing label-->
+  <div class="container-fluid">
+    <div class="row footerSocial">
+      <div class="nav" id="merchLabel">
+        <p class="text-center">Clothing</p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- merch preview -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 offset-sm-1 col-sm-5">
+        <div class="card nav" id="merch1" height=200px>
+          <img src="img/shirtBlack.jpg" alt="t-shirt" style="width:100%">
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool black shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-5">
+        <div class="card nav" id="merch2" height=200px>
+          <img src="img/shirtBrown.jpg" alt="t-shirt" style="width:100%">
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool brown shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-6 offset-sm-1 col-sm-5">
+        <div class="card nav" id="merch3" height=200px>
+          <img src="img/shirtBlue.jpg" alt="t-shirt" style="width:100%">
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool blue shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-5">
+        <div class="card nav" id="merch3" height=200px>
+          <img src="img/shirtBlue.jpg" alt="t-shirt" style="width:100%">
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool red shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--physical label-->
+  <div class="container-fluid">
+    <div class="row footerSocial">
+      <div class="nav" id="merchLabel">
+        <p class="text-center">Other</p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Other view -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 offset-sm-1 col-sm-5">
+        <div class="card nav" id="merch1" height=200px>
+          <img src="img/shirtBlack.jpg" alt="t-shirt" style="width:100%" />
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool black shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-5">
+        <div class="card nav" id="merch2" height=200px>
+          <img src="img/shirtBrown.jpg" alt="t-shirt" style="width:100%" />
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool brown shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-6 offset-sm-1 col-sm-5">
+        <div class="card nav" id="merch3" height=200px>
+          <img src="img/shirtBlue.jpg" alt="t-shirt" style="width:100%" />
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool blue shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--footer and socials background-->
+  <footer>
+    <div class="container-fluid footerSocial">
+      <div class="row mt-10">
+        <div class="col text-center">
+          <a class="btn btn-social-icon btn-lg btn-instagram" href="http://instagram.com/"><i
+              class="fa fa-instagram"></i></a>
+          <a class="btn btn-social-icon btn-lg btn-facebook" href="http://facebook.com/"><i
+              class="fa fa-facebook"></i></a>
+          <a class="btn btn-social-icon btn-lg btn-spotify" href="http://spotify.com/"><i class="fa fa-spotify"></i></a>
+          <a class="btn btn-social-icon btn-lg btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

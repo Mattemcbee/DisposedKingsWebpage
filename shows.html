@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Disposed Kings</title>
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top py-0" style="background-color:#EFDAA5">
+        <div class="container">
+            <a class="navbar-brand py-0" href="index.html"><img src="img/knockout.jpg" width=100px height="auto" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#disposedNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="disposedNavbar">
+
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="merch.html">Merch</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-nowrap active" href="#">Shows</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- music out now -->
+    <div class="container-fluid">
+        <div class="row outEverywhere">
+            <div class="col-4 text-center">
+                <a href="google.com"><img class="img-thumbnail imgResponse" src="img/albumArt.jpg"
+                        alt="album cover" /></a>
+            </div>
+            <div class="col-8 align-bottom text-center">
+                <div class="marginFont">
+                    <h3>This Isn't Music It's Garbage</h3>
+                    <p>Out Everywhere 10.20.2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Shows label-->
+    <div class="container-fluid">
+        <div class="row footerSocial">
+            <div class="nav" id="merchLabel">
+                <p class="text-center">Shows</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--show carousel-->
+    <div class="container-fluid outEverywhere">
+        <div class="row row-content">
+            <div class="col caroBack">
+                <div id="topCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#topCarousel" data-slide-to="1"></li>
+                        <li data-target="#topCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="card nav" id="merch1" height=200px>
+                                        <img src="img/poster1.jpg" alt="show 1" style="width:100%" />
+                                        <div class="container">
+                                            <h4><b>Oct 25th</b></h4>
+                                            <p class="d-none d-sm-block">canal club</p>
+                                        </div>
+                                        <a href="http://www.google.com">
+                                            <span class="hyperspan"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="card nav" id="merch1" height=200px>
+                                        <img src="img/poster1.jpg" alt="show 1" style="width:100%" />
+                                        <div class="container">
+                                            <h4><b>Nov 12th</b></h4>
+                                            <p class="d-none d-sm-block">nuck club</p>
+                                        </div>
+                                        <a href="http://www.google.com">
+                                            <span class="hyperspan"></span></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="card nav" id="merch1" height=200px>
+                                        <img src="img/poster1.jpg" alt="show 1" style="width:100%" />
+                                        <div class="container">
+                                            <h4><b>Jan 25th</b></h4>
+                                            <p class="d-none d-sm-block">hecko club</p>
+                                        </div>
+                                        <a href="http://www.google.com">
+                                            <span class="hyperspan"></span></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#topCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- table https://getbootstrap.com/docs/4.0/components/collapse/-->
+        <div class="container text-center">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                See All Shows
+            </button>
+        </div>
+        <div class="collapse" id="collapseExample">
+            <div class="container">
+                <div class="row row-content">
+                    <div class="col">
+
+                        <div class="card showCard">
+                            <div class="card-header text-white text-center">
+                                <p><b>Shows</b></p>
+                                <div class="card-body text-white">
+                                    <dl class="row">
+                                        <dt class="col-6">Oct 27th</dt>
+                                        <dd class="col-6">Canal club</dd>
+                                        <dt class="col-6">Nov 13th</dt>
+                                        <dd class="col-6">Madison square</dd>
+                                        <dt class="col-6">Nov 27th</dt>
+                                        <dd class="col-6">James</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--footer and socials background-->
+    <div class="container-fluid footerSocial">
+
+        <footer>
+            <div class="container">
+                <div class="row mt-10">
+                    <div class="col text-center">
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-spotify" href="http://spotify.com/"><i
+                                class="fa fa-spotify"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

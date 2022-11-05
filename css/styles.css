@@ -1,17 +1,106 @@
-.nav-link
-{
-  font-family: 'helvetica', sans-serif;
-  color:grey;
-  font-size: 40px;
-  margin: 0 0 0 50px;
-  position: relative;
-  bottom: -20px;
-  
+.navbar {
+  background-color: red;
 }
-.outNow {
-  /* Background pattern from Toptal Subtle Patterns */
-  height: 1000px;
+
+div {
+  position: relative;
+}
+
+.hyperspan {
+  background: none;
+  opacity: .3;
+  position: absolute;
   width: 100%;
-  background-image: "backGrey.jpg";
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.footerSocial {
+  background-color: #EFDAA5;
+}
+
+.emailBtn {
+  background-color: black;
+  text-color: white;
+}
+
+.emailBorder {
+  border: solid white 1px;
+  text-color: white;
+}
+
+.helNue {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.outEverywhere {
+  background-image: url("/img/bandShot3.jpg");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.merchPreview {
+  background-image: url("/img/backGreyCroppedMid.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.showPreview {
+  background-image: url("/img/backGreyCroppedMid.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.caroBack {
+  max-width: 40%;
+  max-height: auto%;
+  margin: 40px auto auto auto;
+  
+
+}
+
+.showCard {
+  background-color: black;
+  text-color: white;
+  border: solid 2px white;
+  max-width: 40%;
+  margin: auto;
+}
+
+.imgResponse {
+  max-width: 80%;
+  margin: 10px;
+  max-width: auto;
+  text-align: center;
+}
+
+.imgAlbumNew {
+  max-width: 40%;
+  margin: 100px 100px 40px 100px;
+  max-width: auto;
+
+}
+
+.marginFont {
+  color: white;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: larger;
+}
+
+.isntMusic {
+  position: absolute;
+
+  vertical-align: middle;
+  text-align: center;
+
+
 }
