@@ -9,10 +9,15 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
+  <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhdXeFaxOedfTDw.woff2" />
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.min.css" />
 
   <title>Disposed Kings</title>
 </head>
@@ -20,23 +25,24 @@
 <body>
 
   <!--navbar-->
-  <nav class="navbar navbar-expand-md navbar-dark sticky-top py-0" style="background-color:#EFDAA5">
-    <div class="container">
-      <a class="navbar-brand py-0" href="index.html"><img src="img/knockout.jpg" width=100px height="auto" /></a>
+  <nav class="navbar navbar-expand-md  sticky-top py-0 footerSocial">
+    <div class="container-fluid">
+      <a class="navbar-brand py-0 pl-0 ml-0 mt-1 mb-1" href="index.html"><img src="img/knockout2.jpg" 
+          height="70vh"  /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#disposedNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="disposedNavbar">
+      <div class="collapse navbar-collapse helNue" id="disposedNavbar">
 
         <ul class="navbar-nav">
           <li>
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active navColor" href="#">Home</a>
           </li>
           <li>
-            <a class="nav-link" href="merch.html">Merch</a>
+            <a class="nav-link navColor" href="merch.html">Merch</a>
           </li>
           <li>
-            <a class="nav-link text-nowrap" href="shows.html">Shows</a>
+            <a class="nav-link navColor text-nowrap" href="shows.html">Shows</a>
           </li>
         </ul>
       </div>
@@ -49,7 +55,7 @@
       <div class="col text-center">
         <a href="google.com"><img class="img-thumbnail imgAlbumNew" src="img/albumArt.jpg" alt="album cover" /></a>
         <div class="media-body align-self-center">
-          <p class="marginFont"><strong>Out Everywhere 10.20.2022</strong></p>
+          <p class="marginFontTop">Out Everywhere 10.20.2022</p>
         </div>
       </div>
     </div>
@@ -70,51 +76,66 @@
   </div>
 
   <!-- merch preview -->
-  <div class="container-fluid">
-    <div class="row merchPreview">
-      <div class="row">
-        <div class="col-6 col-sm-4">
-          <div class="card nav" id="merch1" height=200px>
-            <img src="img/shirtBlack.jpg" alt="t-shirt" style="width:100%">
-            <div class="container">
-              <h4 class="text-nowrap"><b>$25</b></h4>
-              <p class="d-none d-sm-block">it's a cool black shirt</p>
-            </div>
-            <a href="http://www.google.com">
-              <span class="hyperspan"></span></a>
+  <div class="container-fluid pb-100" style="background-color:#e5dab7">
+
+    <div class="row mb-10">
+      <div class="col-6 col-sm-4">
+        <div class="card nav" id="merch1" height=200px>
+          <img src="img/shirtBlack.jpg" alt="t-shirt" style="width:100%">
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool black shirt</p>
           </div>
-        </div>
-        <div class="col-6 col-sm-4">
-          <div class="card nav" id="merch2" height=200px>
-            <img src="img/shirtBrown.jpg" alt="t-shirt" style="width:100%">
-            <div class="container">
-              <h4 class="text-nowrap"><b>$25</b></h4>
-              <p class="d-none d-sm-block">it's a cool brown shirt</p>
-            </div>
-            <a href="http://www.google.com">
-              <span class="hyperspan"></span></a>
-          </div>
-        </div>
-        <div class="d-none d-sm-block col-sm-4">
-          <div class="card nav" id="merch3" height=200px>
-            <img src="img/shirtBlue.jpg" alt="t-shirt" style="width:100%">
-            <div class="container">
-              <h4 class="text-nowrap"><b>$25</b></h4>
-              <p class="d-none d-sm-block">it's a cool blue shirt</p>
-            </div>
-            <a href="http://www.google.com">
-              <span class="hyperspan"></span></a>
-          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col text-center">
-          <a role="button" class="btn btn-outline-light btn-sm" href="merch.html">more merch</a>
+      <div class="col-6 col-sm-4">
+        <div class="card nav" id="merch2" height=200px>
+          <img src="img/shirtBrown.jpg" alt="t-shirt" style="width:100%">
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool brown shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+      <div class="d-none d-sm-block col-sm-4">
+        <div class="card nav" id="merch3" height=200px>
+          <img src="img/shirtBlue.jpg" alt="t-shirt" style="width:100%">
+          <div class="container">
+            <h4 class="text-nowrap"><b>$25</b></h4>
+            <p class="d-none d-sm-block">it's a cool blue shirt</p>
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
         </div>
       </div>
     </div>
+    <div class="row text-center pb-10">
+      <div class="col mt-2 mt-10 pb-10">
+        <a role="button" class="btn btn-outline-light" href="merch.html">more merch</a>
+      </div>
+    </div>
   </div>
-  <!--show label-->
+  <!--show label
+  <div class="container-fluid">
+    <div class="row footerSocial">
+      <div class="col">
+        <div class="nav" id="showLabel">
+          <p class="marginFont">Upcoming Shows</p>
+          <a href="show.html">
+            <span class="hyperspan"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- show preview -->
+  <div class="container-fluid merchPreview">
+     <!--show label-->
   <div class="container-fluid">
     <div class="row footerSocial">
       <div class="col">
@@ -127,12 +148,11 @@
       </div>
     </div>
   </div>
+    <div class="row text-nowrap ">
 
-  <!-- show preview -->
-  <div class="container-fluid showPreview">
-    <div class="row ">
-      <div class="col-6 offset-sm-1 col-sm-5">
-        <div class="card nav" id="merch1" height=200px>
+      <!-- old cards
+        <div class="col-3 offset-3 text-center">
+        <div class="card nav" id="merch1" >
           <img src="img/poster1.jpg" alt="show 1" style="width:100%" />
           <div class="container">
             <h4><b>Oct 25th</b></h4>
@@ -142,8 +162,8 @@
             <span class="hyperspan"></span></a>
         </div>
       </div>
-      <div class="col-6 col-sm-5">
-        <div class="card nav" id="merch2" height=200px>
+      <div class="col-3" text-center>
+        <div class="card nav" id="merch2">
           <img src="img/poster1.jpg" alt="show 2" style="width:100%" />
           <div class="container">
             <h4 class="text-nowrap"><b>Nov 23rd</b></h4>
@@ -152,56 +172,195 @@
           <a href="http://www.google.com">
             <span class="hyperspan"></span></a>
         </div>
-      </div>
-      <!--button-->
-    </div>
-    <div class="row">
-      <div class="col text-center">
-        <a role="button" class="btn btn-sm btn-outline-light" href="shows.html">More Shows</a>
-      </div>
-    </div>
-  </div>
-  <!--footer and socials background https://mdbootstrap.com/docs/standard/content-styles/animations/-->
-  <div class="container-fluid footerSocial" data-mdb-animation-on-scroll=" repeat" data-mdb-animation-reset="true"
-    data-mdb-animation="slide-in-up">
-    <form>
-      <div class=" form-group row">
-        <label for="email" class="d-none d-sm-block offset-2 col-8 col-form-label text-center helNue">Be the first to
-          know
-          about the latest Disposed Kings news!</label>
-        <label for="email" class="d-block d-sm-none offset-2 col-8 col-form-label text-center helNue">Sign up for
-          Disposed
-          Kings news!</label>
-        <div class="offset-4 col-4">
-          <input type="text" class="form-control form-control-outline-light" id="email" name="email"
-            placeholder="Email" />
-        </div>
-      </div>
-      <div class="form-group row">
-        <div class="offset-4 col-4 text-center mt-2">
-          <button type="submit" class="btn btn-sm btn-outline-light">Subscribe</button>
-        </div>
-      </div>
-
-    </form>
-
-    <footer>
-      <div class="container">
-        <div class="row mt-10">
-          <div class="col text-center">
-            <a class="btn btn-social-icon btn-lg btn-instagram" href="http://instagram.com/"><i
-                class="fa fa-instagram"></i></a>
-            <a class="btn btn-social-icon btn-lg btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-            <a class="btn btn-social-icon btn-lg btn-spotify" href="http://spotify.com/"><i class="fa fa-spotify"></i></a>
-            <a class="btn btn-social-icon btn-lg btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-
+      </div>-->
+      <div class="col-6 col-sm-4">
+        <div class="card nav  showPrevCard text-center" style="max-width: 100%;">
+          <div class="row showCardLines">
           </div>
+          <div class="row no-gutters">
+            <div class="col-2">
+              <h5>Nov </br>14th</br>2022</h5>
+            </div>
+            <div class="col-10">
+              <div class="card-body d-none d-sm-block">
+                <h5 class="card-title">Richmond, VA</h5>
+                <h4 class="card-text">Canal Club</h4>
+                <h2 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h2>
 
+              </div>
+              <div class="card-body d-sm-none ">
+                <h6 class="card-title">Richmond, VA</h5>
+                  <h3 class="card-text">Canal Club</h3>
+                  <h1 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h1>
+              </div>
+            </div>
+          </div>
+          <div class="row showCardLines">
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
         </div>
       </div>
+      <div class="col-6 col-sm-4">
+        <div class="card nav showPrevCard text-center" style="max-width: 100%;">
+          <div class="row showCardLines">
+          </div>
+          <div class="row no-gutters">
+            <div class="col-2">
+              <h5>Nov </br>28th</br>2022</h5>
+            </div>
+            <div class="col-10">
+              <div class="card-body d-none d-sm-block">
+                <h5 class="card-title">Charlotsville, VA</h5>
+                <h4 class="card-text">Brew Club</h4>
+                <h2 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h2>
 
-    </footer>
+              </div>
+              <div class="card-body d-sm-none ">
+                <h6 class="card-title">Charlotsville, VA</h5>
+                  <h3 class="card-text">Brew Club</h3>
+                  <h1 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h1>
+
+              </div>
+            </div>
+          </div>
+          <div class="row showCardLines">
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 d-none d-sm-block">
+        <div class="card nav  showPrevCard text-center" style="max-width: 100%;">
+          <div class="row showCardLines">
+          </div>
+          <div class="row no-gutters">
+            <div class="col-2">
+              <h5>Nov </br>28th</br>2022</h5>
+            </div>
+            <div class="col-10">
+              <div class="card-body d-none d-sm-block">
+                <h5 class="card-title">New Port News, VA</h5>
+                <h4 class="card-text">Bar Spot</h4>
+                <h2 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h2>
+                </h2>
+              </div>
+              <div class="card-body d-sm-none ">
+                <h6 class="card-title">New Port News, VA</h5>
+                  <h4 class="card-text">Bar Spot</h4>
+                  <h1 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h1>
+
+              </div>
+            </div>
+          </div>
+          <div class="row showCardLines">
+          </div>
+          <a href="http://www.google.com">
+            <span class="hyperspan"></span></a>
+        </div>
+      </div>
+    </div>
+    <!--show label
+  <div class="container-fluid mb-10">
+    <div class="row footerSocial">
+      <div class="col">
+        <div class="nav" id="showLabel">
+          <p class="marginFont">More Shows</p>
+          <a href="show.html">
+            <span class="hyperspan"></span>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
+  </div>-->
+  <!--button-->
+    <div class="row mt-10">
+      <div class="col text-center mt-10 ">
+        <a role="button" class="btn btn-outline-light" href="shows.html">More Shows</a>
+      </div>
+    </div>
+  </div>
+
+  <!--footer and socials background https://mdbootstrap.com/docs/standard/content-styles/animations/-->
+
+
+  <footer>
+    <div class="container-fluid footerSocial" data-mdb-animation-on-scroll=" repeat" data-mdb-animation-reset="true"
+      data-mdb-animation="slide-in-up" ">
+  <div class=" row mt-10 text-center">
+      <div class="col-4 text-center">
+        <form>
+          <div class="form-group text-center">
+            <label for="email" class="col col-form-label text-center helNue">Stay up to date!</label>
+            <div class="row text-center">
+              <div class=" offset-lg-2  col-sm-12 offset-md-1 col-md-5 ">
+                <input type="text" class="form-control form-control-outline-light" id="email" name="email"
+                  placeholder="Email" />
+              </div>
+
+              <div>
+                <div class=" col-sm-12 col-md-4  text-center">
+                  <button type="submit" id="addEmail" class="btn btn-outline-light">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      
+        <div class="col-4 text-center d-none d-sm-block">
+          <label class="col-12 col-form-label text-center helNue">Follow</label>
+          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+              class="fa-brands fa-2xl fa-instagram"></i></a>
+          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+              class="fa-brands fa-2xl fa-facebook"></i></a>
+          <a class="btn btn-social-icon btn-spotify" href="http://spotify.com/"><i
+              class="fa-brands fa-2xl fa-spotify"></i>
+          </a>
+          <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
+              class="fa-brands fa-2xl fa-youtube"></i></a>
+          <a class="btn btn-social-icon btn-itunes" href="http://youtube.com/"><i
+              class="fa-brands fa-2xl fa-apple"></i></a>
+        </div>
+       <div class="col-4 text-center d-sm-none ">
+          <label class="col-12 col-form-label text-center helNue">Follow</label>
+          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+              class="fa-brands fa-md fa-instagram"></i></a>
+          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+              class="fa-brands fa-md fa-facebook"></i></a>
+          <a class="btn btn-social-icon btn-spotify" href="http://spotify.com/"><i
+              class="fa-brands fa-md fa-spotify"></i>
+          </a>
+          <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
+              class="fa-brands fa-md fa-youtube"></i></a>
+          <a class="btn btn-social-icon btn-itunes" href="http://youtube.com/"><i
+              class="fa-brands fa-md fa-apple"></i></a>
+        </div> 
+      
+
+      <div class="col-4 text-center d-none d-lg-block">
+        <label class="col-12 col-form-label text-center helNue">Contact Us</label>
+        <a role="button" class="btn btn-link plain" href="mailto:mail@mail.wack"><i class="fa-solid fa-envelope"></i>
+          wearedisposedhc@gmail.com</a>
+      </div>
+      <div class="col-4 text-center d-lg-none d-none d-sm-block">
+        <label class="col-12 col-form-label text-center helNue">Contact Us</label>
+        <a role="button" class="btn btn-link plainSm" href="mailto:mail@mail.wack"><i class="fa-solid fa-envelope"></i>
+          wearedisposedhc@gmail.com</p></a>
+      </div>
+      <div class="col-4 text-center d-sm-none">
+        <label class="col-12 col-form-label text-center helNue">Contact Us</label>
+        <a role="button" class="btn btn-link plainSm" href="mailto:mail@mail.wack"><i class="fa-solid fa-envelope fa-xl"></i><p class="d-none d-sm-block">
+          wearedisposedhc@gmail.com</p></a>
+      </div>
+
+    </div>
+    </div>
+    </div>
+  </footer>
+
   <!--
  
         <div class="row row-content m-0 p-0">

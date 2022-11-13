@@ -17,12 +17,16 @@ div {
 }
 
 .footerSocial {
-  background-color: #EFDAA5;
+  background-color: #e5dab7;
 }
 
 .emailBtn {
   background-color: black;
   text-color: white;
+}
+
+.navColor {
+  color: black;
 }
 
 .emailBorder {
@@ -31,7 +35,17 @@ div {
 }
 
 .helNue {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 20px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .outEverywhere {
@@ -46,33 +60,32 @@ div {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.showPreview {
-  background-image: url("/img/backGreyCroppedMid.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px;
 }
 
 .caroBack {
-  max-width: 40%;
-  max-height: auto%;
-  margin: 40px auto auto auto;
-  
-
+  background-color: red;
+  margin: 10px;
 }
 
 .showCard {
   background-color: black;
   text-color: white;
-  border: solid 2px white;
-  max-width: 40%;
-  margin: auto;
+  border: solid 1px red;
+}
+
+.showPrevCard {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  \\border: solid 2px white;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.showCardLines {
+  background-color:white; 
+  height:5px; 
+  width:100%; 
+  margin:auto;
 }
 
 .imgResponse {
@@ -82,25 +95,85 @@ div {
   text-align: center;
 }
 
-.imgAlbumNew {
-  max-width: 40%;
-  margin: 100px 100px 40px 100px;
-  max-width: auto;
+.card {
+  width: 100%;
+  height:auto;
+  margin: 0 auto;
+  padding:5px;
+  /* Added */
+  float: none;
+  /* Added */
+}
 
+.imgAlbumNew {
+  max-width: 30%;
+  margin: 50px;
+  margin-bottom: 0;
+  max-width: auto;
 }
 
 .marginFont {
   color: white;
   text-align: center;
-  margin: 10px auto 10px auto;
-  font-size: larger;
+  margin: 5px auto 5px auto;
+  font-size: xx-large;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
-.isntMusic {
-  position: absolute;
+.plain {
+  text-decoration: none;
+    color: inherit;
+    font-size: inherit;
 
-  vertical-align: middle;
+}
+.plainSm {
+  text-decoration: none;
+    color: inherit;
+    font-size: 2vw;
+
+}
+nav {
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,.2);
+}
+
+.arrowIconSize {
+  font-size: 1em;
+  background-color: red;
+}
+
+
+h5, h4 {
+  font-size: 2vw;
+
+}
+h4 {
+  font-size: 2vw;
+  font-weight: lighter;
+}
+h3 {
+  font-size: 3vw;
+  font-weight: lighter;
+}
+h6 {
+  font-size: 3vw;
+
+}
+h2 {
+  font-size: 1vw;
+  font-weight: 100;
+}
+h1 {
+  font-size: 2.5vw;
+  font-weight: 50;
+}
+
+
+.marginFontTop {
+  color: white;
   text-align: center;
-
+  margin: 5px auto 50px auto;
+  font-size: xx-large;
+  font-family: 'Montserrat', sans-serif;
 
 }
