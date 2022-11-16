@@ -18,6 +18,9 @@
     href="https://fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhdXeFaxOedfTDw.woff2" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Finlandica:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
 
   <title>Disposed Kings</title>
 </head>
@@ -25,24 +28,27 @@
 <body>
 
   <!--navbar-->
-  <nav class="navbar navbar-expand-md  sticky-top py-0 footerSocial">
+  <nav class="navbar navbar-expand-md navbar-light sticky-top py-0 footerSocial">
     <div class="container-fluid">
-      <a class="navbar-brand py-0 pl-0 ml-0 mt-1 mb-1" href="index.html"><img src="img/knockout2.jpg" 
-          height="70vh"  /></a>
+      <a class="navbar-brand py-0 pl-0 ml-0 mt-1 mb-1" href="index.html"><img src="img/knockout2.jpg"
+          height="70vh" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#disposedNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse helNue" id="disposedNavbar">
+      <div class="collapse navbar-collapse navFont" id="disposedNavbar">
 
         <ul class="navbar-nav">
           <li>
-            <a class="nav-link active navColor" href="#">Home</a>
+            <a class="nav-link active navColor" href="#">HOME</a>
           </li>
           <li>
-            <a class="nav-link navColor" href="merch.html">Merch</a>
+            <a class="nav-link navColor" href="merch.html">MERCH</a>
           </li>
           <li>
-            <a class="nav-link navColor text-nowrap" href="shows.html">Shows</a>
+            <a class="nav-link navColor text-nowrap" href="shows.html">SHOWS</a>
+          </li>
+          <li>
+            <a class="nav-link navColor" href="connect.html">CONNECT</a>
           </li>
         </ul>
       </div>
@@ -53,9 +59,9 @@
   <div class="container-fluid">
     <div class="row outEverywhere">
       <div class="col text-center">
-        <a href="google.com"><img class="img-thumbnail imgAlbumNew" src="img/albumArt.jpg" alt="album cover" /></a>
-        <div class="media-body align-self-center">
-          <p class="marginFontTop">Out Everywhere 10.20.2022</p>
+        <a href="https://open.spotify.com/album/6Xxu6Dts93rUvJKXmJroQk?referral=labelaffiliate&utm_source=1101lwiyByRP&utm_medium=Indie_Distrokid&utm_campaign=labelaffiliate"><img class="img-thumbnail imgAlbumNew" src="img/albumArt.jpg" alt="album cover" /></a>
+        <div class="col">
+          <p class="navFontWhite" style="vertical-align: middle;">OUT EVERYWHERE 10.20.2022</p>
         </div>
       </div>
     </div>
@@ -66,7 +72,7 @@
     <div class="row footerSocial">
       <div class="col">
         <div class="nav" id="merchLabel">
-          <p class="marginFont">Merch</p>
+          <p class="marginFont">MERCH</p>
           <a href="merch.html">
             <span class="hyperspan"></span>
           </a>
@@ -75,79 +81,161 @@
     </div>
   </div>
 
-  <!-- merch preview -->
-  <div class="container-fluid pb-100" style="background-color:#e5dab7">
+  <!--merch carousel-->
 
-    <div class="row mb-10">
-      <div class="col-6 col-sm-4">
-        <div class="card nav" id="merch1" height=200px>
-          <img src="img/shirtBlack.jpg" alt="t-shirt" style="width:100%">
-          <div class="container">
-            <h4 class="text-nowrap"><b>$25</b></h4>
-            <p class="d-none d-sm-block">it's a cool black shirt</p>
+  <div class="container-fluid" style="background-color:#e5dab7">
+    <div class="row row-content">
+      <div class="col-sm-4 col-6  ">
+
+        <div class="card nav " id="merch1" height=200px>
+
+          <div id="merchCarousel1" class="carousel carousel-dark slide" data-interval="false">
+            <ol class="carousel-indicators" >
+              <li data-target="#merchCarousel1" data-slide-to="0" class="active"></li>
+              <li data-target="#merchCarousel1" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <img src="img/blackTee1.jpg" alt="show 1" style="width:100%" />
+
+                    <a href="https://wearedisposedhc.com/products/mens-classic-tee">
+                      <span class="hyperspan"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container-fluid">
+                  <div class="row">
+                    <img src="img/blackTee2.jpg" alt="show 1" style="width:100%" />
+
+                    <a href="https://wearedisposedhc.com/products/mens-classic-tee">
+                      <span class="hyperspan"></span></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="container ">
+              <h4><b>$18.95</b></h4>
+              <p class="d-none d-sm-block">Disposed Shirt</p>
+            </div>
           </div>
-          <a href="http://www.google.com">
-            <span class="hyperspan"></span></a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4">
-        <div class="card nav" id="merch2" height=200px>
-          <img src="img/shirtBrown.jpg" alt="t-shirt" style="width:100%">
-          <div class="container">
-            <h4 class="text-nowrap"><b>$25</b></h4>
-            <p class="d-none d-sm-block">it's a cool brown shirt</p>
-          </div>
-          <a href="http://www.google.com">
-            <span class="hyperspan"></span></a>
-        </div>
-      </div>
-      <div class="d-none d-sm-block col-sm-4">
-        <div class="card nav" id="merch3" height=200px>
-          <img src="img/shirtBlue.jpg" alt="t-shirt" style="width:100%">
-          <div class="container">
-            <h4 class="text-nowrap"><b>$25</b></h4>
-            <p class="d-none d-sm-block">it's a cool blue shirt</p>
-          </div>
-          <a href="http://www.google.com">
-            <span class="hyperspan"></span></a>
-        </div>
-      </div>
-    </div>
-    <div class="row text-center pb-10">
-      <div class="col mt-2 mt-10 pb-10">
-        <a role="button" class="btn btn-outline-light" href="merch.html">more merch</a>
-      </div>
-    </div>
-  </div>
-  <!--show label
-  <div class="container-fluid">
-    <div class="row footerSocial">
-      <div class="col">
-        <div class="nav" id="showLabel">
-          <p class="marginFont">Upcoming Shows</p>
-          <a href="show.html">
-            <span class="hyperspan"></span>
+          <a class="carousel-control-prev" href="#merchCarousel1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#merchCarousel1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
           </a>
         </div>
       </div>
-    </div>
-  </div> -->
 
+      <div class="col-sm-4 col-6 ">
+
+        <div class="card nav " id="merch1" height=200px>
+
+          <div id="merchCarousel2" class="carousel carousel-primary text-black slide" data-interval="false">
+            <ol class="carousel-indicators" >
+              <li data-target="#merchCarousel2" data-slide-to="0" class="active"></li>
+              <li data-target="#merchCarousel2" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <img src="img/blackHoodie1.jpg" alt="show 1" style="width:100%" />
+
+                    <a href="https://wearedisposedhc.com/products/unisex-hoodie-1">
+                      <span class="hyperspan"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container-fluid">
+                  <div class="row">
+                    <img src="img/blackHoodie2.jpg" alt="show 1" style="width:100%" />
+
+                    <a href="https://wearedisposedhc.com/products/unisex-hoodie-1">
+                      <span class="hyperspan"></span></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="container">
+              <h4><b>$42.90</b></h4>
+              <p class="d-none d-sm-block">Disposed Hoodie</p>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#merchCarousel2" role="button" data-slide="prev" style="color:black;">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only" >Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#merchCarousel2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-4 d-none d-sm-block ">
+
+        <div class="card nav " id="merch1" height=200px>
+
+          <div id="merchCarousel3" class="" data-interval="false">
+           
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <img src="img/blackMug1.jpg" alt="show 1" style="width:100%" />
+
+                    <a href="https://wearedisposedhc.com/products/black-glossy-mug-2">
+                      <span class="hyperspan"></span></a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="container">
+              <h4><b>$18.95</b></h4>
+              <p class="d-none d-sm-block">Mug</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row text-center">
+      <div class="col mt-2">
+        <a role="button" class="btn btn-outline-light btnSpace btn-lg" href="merch.html">MORE MERCH</a>
+      </div>
+    </div>
+  </div>
+  
   <!-- show preview -->
   <div class="container-fluid merchPreview">
-     <!--show label-->
-  <div class="container-fluid">
-    <div class="row footerSocial">
-      <div class="col">
-        <div class="nav" id="showLabel">
-          <p class="marginFont">Upcoming Shows</p>
-          <a href="show.html">
-            <span class="hyperspan"></span>
-          </a>
+    <!--show label-->
+    <div class="container-fluid">
+      <div class="row footerSocial">
+        <div class="col">
+          <div class="nav" id="showLabel">
+            <p class="marginFont">UPCOMING SHOWS</p>
+            <a href="show.html">
+              <span class="hyperspan"></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
     <div class="row text-nowrap ">
 
       <!-- old cards
@@ -178,26 +266,26 @@
           <div class="row showCardLines">
           </div>
           <div class="row no-gutters">
-            <div class="col-2">
-              <h5>Nov </br>14th</br>2022</h5>
+            <div class="col-2 my-auto">
+              <h5>Nov </br>19th</br>2022</h5>
             </div>
             <div class="col-10">
               <div class="card-body d-none d-sm-block">
-                <h5 class="card-title">Richmond, VA</h5>
-                <h4 class="card-text">Canal Club</h4>
+                <h5 class="card-title">Another Round</h5>
+                <h4 class="card-text">Richmond, VA</h4>
                 <h2 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h2>
 
               </div>
               <div class="card-body d-sm-none ">
-                <h6 class="card-title">Richmond, VA</h5>
-                  <h3 class="card-text">Canal Club</h3>
+                <h6 class="card-title">Another Round</h5>
+                  <h3 class="card-text">Richmond, VA</h3>
                   <h1 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h1>
               </div>
             </div>
           </div>
           <div class="row showCardLines">
           </div>
-          <a href="http://www.google.com">
+          <a href="https://fb.watch/gPXMPinc1O/">
             <span class="hyperspan"></span></a>
         </div>
       </div>
@@ -206,19 +294,19 @@
           <div class="row showCardLines">
           </div>
           <div class="row no-gutters">
-            <div class="col-2">
-              <h5>Nov </br>28th</br>2022</h5>
+            <div class="col-2  my-auto">
+              <h5>Dec </br>18th</br>2022</h5>
             </div>
             <div class="col-10">
               <div class="card-body d-none d-sm-block">
-                <h5 class="card-title">Charlotsville, VA</h5>
-                <h4 class="card-text">Brew Club</h4>
+                <h5 class="card-title">West Beach Tavern</h5>
+                <h4 class="card-text">Newport News, VA</h4>
                 <h2 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h2>
 
               </div>
               <div class="card-body d-sm-none ">
-                <h6 class="card-title">Charlotsville, VA</h5>
-                  <h3 class="card-text">Brew Club</h3>
+                <h6 class="card-title">West Beach Tavern</h5>
+                  <h3 class="card-text">Newport News, VA</h3>
                   <h1 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h1>
 
               </div>
@@ -226,7 +314,7 @@
           </div>
           <div class="row showCardLines">
           </div>
-          <a href="http://www.google.com">
+          <a href="https://www.facebook.com/photo/?fbid=189877920254770&set=a.175987688310460">
             <span class="hyperspan"></span></a>
         </div>
       </div>
@@ -235,19 +323,19 @@
           <div class="row showCardLines">
           </div>
           <div class="row no-gutters">
-            <div class="col-2">
-              <h5>Nov </br>28th</br>2022</h5>
+            <div class="col-2  my-auto">
+              <h5>Dec </br>20th</br>2022</h5>
             </div>
             <div class="col-10">
               <div class="card-body d-none d-sm-block">
-                <h5 class="card-title">New Port News, VA</h5>
-                <h4 class="card-text">Bar Spot</h4>
+                <h5 class="card-title">Canal Club</h5>
+                <h4 class="card-text">Richmond, VA</h4>
                 <h2 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h2>
                 </h2>
               </div>
               <div class="card-body d-sm-none ">
-                <h6 class="card-title">New Port News, VA</h5>
-                  <h4 class="card-text">Bar Spot</h4>
+                <h6 class="card-title">Canal Club</h5>
+                  <h4 class="card-text">Richmond, VA</h4>
                   <h1 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h1>
 
               </div>
@@ -274,92 +362,110 @@
     </div>
   </div>
   </div>-->
-  <!--button-->
+    <!--button-->
     <div class="row mt-10">
       <div class="col text-center mt-10 ">
-        <a role="button" class="btn btn-outline-light" href="shows.html">More Shows</a>
+        <a role="button" class="btn btn-outline-light btn-lg btnSpace2" href="shows.html">MORE SHOWS</a>
       </div>
     </div>
   </div>
 
+
+
+
   <!--footer and socials background https://mdbootstrap.com/docs/standard/content-styles/animations/-->
 
 
+  <!--footer and socials background-->
   <footer>
     <div class="container-fluid footerSocial" data-mdb-animation-on-scroll=" repeat" data-mdb-animation-reset="true"
-      data-mdb-animation="slide-in-up" ">
-  <div class=" row mt-10 text-center">
-      <div class="col-4 text-center">
-        <form>
-          <div class="form-group text-center">
-            <label for="email" class="col col-form-label text-center helNue">Stay up to date!</label>
-            <div class="row text-center">
-              <div class=" offset-lg-2  col-sm-12 offset-md-1 col-md-5 ">
-                <input type="text" class="form-control form-control-outline-light" id="email" name="email"
-                  placeholder="Email" />
-              </div>
+        data-mdb-animation="slide-in-up" ">
+<div class=" row mt-10 text-center">
+        <div class="col-4 text-center">
+            <form>
+                <div class="form-group text-center">
+                    <label for="email" class="col col-form-label text-center helNue">Stay up to date!</label>
+                    <div class="row text-center">
+                        <div class=" offset-lg-2  col-sm-12 offset-md-1 col-md-5 ">
+                            <input type="text" class="form-control form-control-outline-light" id="email"
+                                name="email" placeholder="Email" />
+                        </div>
 
-              <div>
-                <div class=" col-sm-12 col-md-4  text-center">
-                  <button type="submit" id="addEmail" class="btn btn-outline-light">Subscribe</button>
+                        <div>
+                            <div class=" col-sm-12 col-md-4  text-center">
+                                <button type="submit" id="addEmail" class="btn btn-outline-light">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      
-        <div class="col-4 text-center d-none d-sm-block">
-          <label class="col-12 col-form-label text-center helNue">Follow</label>
-          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
-              class="fa-brands fa-2xl fa-instagram"></i></a>
-          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
-              class="fa-brands fa-2xl fa-facebook"></i></a>
-          <a class="btn btn-social-icon btn-spotify" href="http://spotify.com/"><i
-              class="fa-brands fa-2xl fa-spotify"></i>
-          </a>
-          <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
-              class="fa-brands fa-2xl fa-youtube"></i></a>
-          <a class="btn btn-social-icon btn-itunes" href="http://youtube.com/"><i
-              class="fa-brands fa-2xl fa-apple"></i></a>
+            </form>
         </div>
-       <div class="col-4 text-center d-sm-none ">
-          <label class="col-12 col-form-label text-center helNue">Follow</label>
-          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
-              class="fa-brands fa-md fa-instagram"></i></a>
-          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
-              class="fa-brands fa-md fa-facebook"></i></a>
-          <a class="btn btn-social-icon btn-spotify" href="http://spotify.com/"><i
-              class="fa-brands fa-md fa-spotify"></i>
-          </a>
-          <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
-              class="fa-brands fa-md fa-youtube"></i></a>
-          <a class="btn btn-social-icon btn-itunes" href="http://youtube.com/"><i
-              class="fa-brands fa-md fa-apple"></i></a>
-        </div> 
-      
 
-      <div class="col-4 text-center d-none d-lg-block">
-        <label class="col-12 col-form-label text-center helNue">Contact Us</label>
-        <a role="button" class="btn btn-link plain" href="mailto:mail@mail.wack"><i class="fa-solid fa-envelope"></i>
-          wearedisposedhc@gmail.com</a>
-      </div>
-      <div class="col-4 text-center d-lg-none d-none d-sm-block">
-        <label class="col-12 col-form-label text-center helNue">Contact Us</label>
-        <a role="button" class="btn btn-link plainSm" href="mailto:mail@mail.wack"><i class="fa-solid fa-envelope"></i>
-          wearedisposedhc@gmail.com</p></a>
-      </div>
-      <div class="col-4 text-center d-sm-none">
-        <label class="col-12 col-form-label text-center helNue">Contact Us</label>
-        <a role="button" class="btn btn-link plainSm" href="mailto:mail@mail.wack"><i class="fa-solid fa-envelope fa-xl"></i><p class="d-none d-sm-block">
-          wearedisposedhc@gmail.com</p></a>
-      </div>
+
+        <div class="col-4 text-center d-none d-sm-block">
+            <label class="col-12 col-form-label text-center helNue">Follow</label>
+            <a class="btn btn-social-icon btn-instagram"
+                href="https://www.instagram.com/wearedisposed_hc/"><i
+                    class="fa-brands fa-2xl fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/wearedisposedhc"><i
+                    class="fa-brands fa-2xl fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-spotify"
+                href="https://open.spotify.com/album/6Xxu6Dts93rUvJKXmJroQk?referral=labelaffiliate&utm_source=1101lwiyByRP&utm_medium=Indie_Distrokid&utm_campaign=labelaffiliate"><i
+                    class="fa-brands fa-2xl fa-spotify"></i>
+            </a>
+            <a class="btn btn-social-icon btn-youtube"
+                href="https://m.youtube.com/playlist?list=OLAK5uy_mevKTwTY3tyC1l_DgbYpD118wvY0EEiE0"><i
+                    class="fa-brands fa-2xl fa-youtube"></i></a>
+            <a class="btn btn-social-icon btn-itunes"
+                href="https://music.apple.com/us/album/this-isnt-music-its-absolute-garbage-ep/1649866268?uo=4&app=itunes&at=1001lry3&ct=dashboard"><i
+                    class="fa-brands fa-2xl fa-apple"></i></a>
+        </div>
+        <div class="col-4 text-center d-sm-none ">
+            <label class="col-12 col-form-label text-center helNue">Follow</label>
+            <a class="btn btn-social-icon btn-instagram"
+                href="https://www.instagram.com/wearedisposed_hc/"><i
+                    class="fa-brands fa-2xl fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/wearedisposedhc"><i
+                    class="fa-brands fa-2xl fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-spotify"
+                href="https://open.spotify.com/album/6Xxu6Dts93rUvJKXmJroQk?referral=labelaffiliate&utm_source=1101lwiyByRP&utm_medium=Indie_Distrokid&utm_campaign=labelaffiliate"><i
+                    class="fa-brands fa-2xl fa-spotify"></i>
+            </a>
+            <a class="btn btn-social-icon btn-youtube"
+                href="https://m.youtube.com/playlist?list=OLAK5uy_mevKTwTY3tyC1l_DgbYpD118wvY0EEiE0"><i
+                    class="fa-brands fa-2xl fa-youtube"></i></a>
+            <a class="btn btn-social-icon btn-itunes"
+                href="https://music.apple.com/us/album/this-isnt-music-its-absolute-garbage-ep/1649866268?uo=4&app=itunes&at=1001lry3&ct=dashboard"><i
+                    class="fa-brands fa-2xl fa-apple"></i></a>
+        </div>
+
+
+        <div class="col-4 text-center d-none d-lg-block">
+            <label class="col-12 col-form-label text-center helNue">Contact Us</label>
+            <a role="button" class="btn btn-link plain" href="mailto:mail@mail.wack"><i
+                    class="fa-solid fa-envelope"></i>
+                wearedisposedhc@gmail.com</a>
+        </div>
+        <div class="col-4 text-center d-lg-none d-none d-sm-block">
+            <label class="col-12 col-form-label text-center helNue">Contact Us</label>
+            <a role="button" class="btn btn-link plainSm" href="mailto:mail@mail.wack"><i
+                    class="fa-solid fa-envelope"></i>
+                wearedisposedhc@gmail.com</p></a>
+        </div>
+        <div class="col-4 text-center d-sm-none">
+            <label class="col-12 col-form-label text-center helNue">Contact Us</label>
+            <a role="button" class="btn btn-link plainSm" href="mailto:mail@mail.wack"><i
+                    class="fa-solid fa-envelope fa-2xl"></i>
+                <p class="d-none d-sm-block">
+                    wearedisposedhc@gmail.com</p>
+            </a>
+        </div>
 
     </div>
     </div>
     </div>
-  </footer>
+
+</footer>
 
   <!--
  

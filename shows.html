@@ -2,234 +2,460 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
+  <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhdXeFaxOedfTDw.woff2" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Finlandica:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
 
-    <title>Disposed Kings</title>
+  <title>Disposed Kings</title>
 </head>
 
 <body>
 
-    <!--navbar-->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top py-0 footerSocial">
-        <div class="container">
-            <a class="navbar-brand py-0" href="index.html"><img src="img/knockout.jpg" width=100px height="auto" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#disposedNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="disposedNavbar">
-
-                <ul class="navbar-nav">
-                    <li>
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="merch.html">Merch</a>
-                    </li>
-                    <li>
-                        <a class="nav-link text-nowrap active" href="#">Shows</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- music out now -->
+  <!--navbar-->
+  <nav class="navbar navbar-expand-md navbar-light sticky-top py-0 footerSocial">
     <div class="container-fluid">
-        <div class="row outEverywhere">
-            <div class="col-4 text-center">
-                <a href="google.com"><img class="img-thumbnail imgResponse" src="img/albumArt.jpg"
-                        alt="album cover" /></a>
-            </div>
-            <div class="col-8 align-bottom text-center ">
-                <div class="marginFont">
-                    <h3>This Isn't Music It's Garbage</h3>
-                    <p>Out Everywhere 10.20.2022</p>
-                </div>
-            </div>
-        </div>
+      <a class="navbar-brand py-0 pl-0 ml-0 mt-1 mb-1" href="index.html"><img src="img/knockout2.jpg"
+          height="70vh" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#disposedNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navFont" id="disposedNavbar">
+
+        <ul class="navbar-nav">
+          <li>
+            <a class="nav-link navColor" href="index.html">HOME</a>
+          </li>
+          <li>
+            <a class="nav-link navColor" href="merch.html">MERCH</a>
+          </li>
+          <li>
+            <a class="nav-link navColor active text-nowrap" href="#">SHOWS</a>
+          </li>
+          <li>
+            <a class="nav-link navColor" href="connect.html">CONNECT</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <!--Shows label-->
-    <div class="container-fluid">
-        <div class="row footerSocial">
-            <div class="nav" id="merchLabel">
-                <p class="text-center">Shows</p>
-
-            </div>
-        </div>
+  </nav>
+  <!-- music out now
+  <div class="container-fluid">
+    <div class="row " style="background-color:#e5dab7">
+      <div class="col-4 text-center">
+        <a href="google.com"><img class="img-thumbnail imgResponse" src="img/albumArt.jpg" alt="album cover" /></a>
+      </div>
+      <div class="col-8 bannerFont text-center">
+        <p>This Isn't Music, It's Absolute Garbage</p>
+        <p style="font-size: 2.5vw;">Out Everywhere 10.20.2022</p>
+      </div>
     </div>
+  </div> -->
 
-
-    <!--show carousel-->
-    <div class="container-fluid outEverywhere">
-        <div class="row row-content">
-            <div class="col caroBack">
-                <div id="topCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#topCarousel" data-slide-to="1"></li>
-                        <li data-target="#topCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card nav" id="merch1" height=200px>
-                                        <img src="img/poster1.jpg" alt="show 1" style="width:100%" />
-                                        <div class="container">
-                                            <h4><b>Oct 25th</b></h4>
-                                            <p class="d-none d-sm-block">canal club</p>
-                                        </div>
-                                        <a href="http://www.google.com">
-                                            <span class="hyperspan"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card nav" id="merch1" height=200px>
-                                        <img src="img/poster1.jpg" alt="show 1" style="width:100%" />
-                                        <div class="container">
-                                            <h4><b>Nov 12th</b></h4>
-                                            <p class="d-none d-sm-block">nuck club</p>
-                                        </div>
-                                        <a href="http://www.google.com">
-                                            <span class="hyperspan"></span></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card nav" id="merch1" height=200px>
-                                        <img src="img/poster1.jpg" alt="show 1" style="width:100%" />
-                                        <div class="container">
-                                            <h4><b>Jan 25th</b></h4>
-                                            <p class="d-none d-sm-block">hecko club</p>
-                                        </div>
-                                        <a href="http://www.google.com">
-                                            <span class="hyperspan"></span></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#topCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- table https://getbootstrap.com/docs/4.0/components/collapse/-->
-        <div class="container text-center">
-            <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample">
-                See All Shows
-            </button>
-        </div>
-        <div class="collapse" id="collapseExample">
-            <div class="container">
-                <div class="row row-content">
-                    <div class="col">
-
-                        <div class="card showCard">
-                            <div class="card-header text-white text-center">
-                                <p><b>Shows</b></p>
-                                <div class="card-body text-white">
-                                    <dl class="row">
-                                        <dt class="col-6">Oct 27th</dt>
-                                        <dd class="col-6">Canal club</dd>
-                                        <dt class="col-6">Nov 13th</dt>
-                                        <dd class="col-6">Madison square</dd>
-                                        <dt class="col-6">Nov 27th</dt>
-                                        <dd class="col-6">James</dd>
-                                    </dl>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!--brandon dumb-->
-      <div class="container-fluid">
-        <div class="col">
-          <img src="https://cdn.britannica.com/60/8160-050-08CCEABC/German-shepherd.jpg" height="50px" width="auto" id=""/>
-     
-
+  <!--other label-->
+  <div class="container-fluid">
+    <div class="row footerSocial">
+      <div class="col">
+        <div class="nav" id="merchLabel">
+          <p class="marginFont">SHOWS</p>
+          <a href="merch.html">
+            <span class="hyperspan"></span>
+          </a>
         </div>
       </div>
-      <!--dumb-->
-      
-
-    </div>
-
-<span id="dangit">Demo</span>
-
-    <!--footer and socials background-->
-    <footer>
-      <div class="container-fluid footerSocial" data-mdb-animation-on-scroll=" repeat" data-mdb-animation-reset="true"
-    data-mdb-animation="slide-in-up" ">
-  <div class="row mt-10">
-    <div class="col-4 text-center">
-      
-        <form>
-    <div class=" form-group text-center">
-      
-    <label for="email" class="col-form-label text-center helNue">Stay up to date!</label>
-    
-    <div class="col-4 text-center">
-      <input type="text" class="form-control form-control-outline-light" id="email" name="email" placeholder="Email" />
-    </div>
-  
-  <div class="form-group">
-    <div class="col-4 text-center mt-2 mb-10">
-      <button type="submit" class="btn btn-sm btn-outline-light">Subscribe</button>
     </div>
   </div>
-          </div>
-          </div>
-    
 
-  </form>
+
+  <!--show carousel-->
+
+  <div class="container-fluid outEverywhere" >
+    <div class="row row-content">
+      <div class="col-12 mx-auto col-sm-4 ">
+        <div id="topCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#topCarousel" data-slide-to="1"></li>
+            <li data-target="#topCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="card nav " id="merch1" height=200px>
+                    <img src="img/poster1.jpg" alt="show 1" style="width:100%" />
+                    <!--<div class="container">
+                      <h4><b>Oct 25th</b></h4>
+                      <p class="d-none d-sm-block">canal club</p>
+                    </div>-->
+                    <a href="http://www.google.com">
+                      <span class="hyperspan"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="card nav" id="merch1" style="height:100%;">
+                    <img src="img/poster2.jpg" alt="show 1" style="width:100%;" />
+                    <!--<div class="container">
+                      <h4><b>Oct 25th</b></h4>
+                      <p class="d-none d-sm-block">canal club</p>
+                    </div>-->
+                    <a href="http://www.google.com">
+                      <span class="hyperspan"></span></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="card nav" id="merch1" height=200px>
+                    <img src="img/poster3.jpg" alt="show 1" style="width:100%" />
+                    <!--<div class="container">
+                      <h4><b>Oct 25th</b></h4>
+                      <p class="d-none d-sm-block">canal club</p>
+                    </div>-->
+                    <a href="http://www.google.com">
+                      <span class="hyperspan"></span></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#topCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!--row
+      <div class="col-6 offset-1" >
+        <div class="row my-auto">
+          <div class="card nav  showRealCard text-center" >
+            <div class="row showCardLines">
+            </div>
+            <div class="row no-gutters cardInner" style="height:10vw;">
+              <div class="col-2">
+                <h5>Nov </br>14th</br>2022</h5>
+              </div>
+              <div class="col-10">
+                <div class="card-body d-none d-sm-block">
+                  <h5 class="card-title">Richmond, VA</h5>
+                  <h4 class="card-text">Canal Club</h4>
+                  <h2 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h2>
+
+                </div>
+                <div class="card-body d-sm-none ">
+                  <h6 class="card-title">Richmond, VA</h5>
+                    <h3 class="card-text">Canal Club</h3>
+                    <h1 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h1>
+                </div>
+              </div>
+            </div>
+            <div class="row showCardLines">
+            </div>
+            <a href="http://www.google.com">
+              <span class="hyperspan"></span></a>
+          </div>
+        </div>
+        <div class="row my-auto">
+          <div class="card nav  showRealCard text-center" style="max-height: 50%; max-width: auto; ">
+            <div class="row showCardLines">
+            </div>
+            <div class="row no-gutters cardInner" style="height:10vw;">
+              <div class="col-2">
+                <h5>Nov </br>14th</br>2022</h5>
+              </div>
+              <div class="col-10">
+                <div class="card-body d-none d-sm-block">
+                  <h5 class="card-title">Richmond, VA</h5>
+                  <h4 class="card-text">Canal Club</h4>
+                  <h2 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h2>
+
+                </div>
+                <div class="card-body d-sm-none ">
+                  <h6 class="card-title">Richmond, VA</h5>
+                    <h3 class="card-text">Canal Club</h3>
+                    <h1 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h1>
+                </div>
+              </div>
+            </div>
+            <div class="row showCardLines">
+            </div>
+            <a href="http://www.google.com">
+              <span class="hyperspan"></span></a>
+          </div>
+        </div>
+        <div class="row my-auto">
+          <div class="card nav  showRealCard text-center" style="max-height: 50%; max-width: auto; ">
+            <div class="row showCardLines">
+            </div>
+            <div class="row no-gutters cardInner" style="height:10vw;">
+              <div class="col-2">
+                <h5>Nov </br>14th</br>2022</h5>
+              </div>
+              <div class="col-10">
+                <div class="card-body d-none d-sm-block">
+                  <h5 class="card-title">Richmond, VA</h5>
+                  <h4 class="card-text">Canal Club</h4>
+                  <h2 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h2>
+
+                </div>
+                <div class="card-body d-sm-none ">
+                  <h6 class="card-title">Richmond, VA</h5>
+                    <h3 class="card-text">Canal Club</h3>
+                    <h1 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h1>
+                </div>
+              </div>
+            </div>
+            <div class="row showCardLines">
+            </div>
+            <a href="http://www.google.com">
+              <span class="hyperspan"></span></a>
+          </div>
+        </div>
+        <div class="row my-auto">
+          <div class="card nav  showPrevCard text-center" style="max-width: 100%;">
+            <div class="row showCardLines">
+            </div>
+            <div class="row no-gutters cardInner" style="height:10vw;">
+              <div class="col-2">
+                <h5>Nov </br>28th</br>2022</h5>
+              </div>
+              <div class="col-10">
+                <div class="card-body d-none d-sm-block">
+                  <h5 class="card-title">New Port News, VA</h5>
+                  <h4 class="card-text">Bar Spot</h4>
+                  <h2 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h2>
+                  </h2>
+                </div>
+                <div class="card-body d-sm-none ">
+                  <h6 class="card-title">New Port News, VA</h5>
+                    <h4 class="card-text">Bar Spot</h4>
+                    <h1 class="card-text">Details <i class="fa fa-long-arrow-right fa-2xs"></i></h1>
+
+                </div>
+              </div>
+            </div>
+            <div class="row showCardLines">
+            </div>
+            <a href="http://www.google.com">
+              <span class="hyperspan"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>-->
+      <div class="col col-sm-6 tableSpace">
+        <table class="table showPrevCard">
+                    <tbody>
+             <tr>
+              <td class="navFont showDate" >NOV 19 2022</td>
+              <td class="showVenue">Another Round <p  style="font-size: smaller; font-weight:lighter;"> Richmond, VA</p></td>
+              <td class="showDetails"><a href="https://fb.watch/gPXMPinc1O/" class="plain">Details <i class="fa fa-long-arrow-right fa-2xs"></i></a></td>
+            </tr>
+                       
+                       <tr>
+              <td class="navFont showDate" >DEC 8 2022</td>
+              <td class="showVenue">Crayola House <p  style="font-size: smaller; font-weight:lighter;"> Harrisonburg, VA</p></td>
+              <td class="showDetails"><a href="#" class="plain">Details <i class="fa fa-long-arrow-right fa-2xs"></i></a></td>
+            </tr>
+            <tr>
+              <td class="navFont showDate" >DEC 18 2022</td>
+              <td class="showVenue">West Beach Tavern <p  style="font-size: smaller; font-weight:lighter;"> Newport News, VA</p></td>
+              <td class="showDetails"><a href="https://www.facebook.com/photo/?fbid=189877920254770&set=a.175987688310460" class="plain">Details <i class="fa fa-long-arrow-right fa-2xs"></i></a></td>
+            </tr>
+                       <tr>
+              <td class="navFont showDate" >DEC 20 2022</td>
+              <td class="showVenue">Canal Club <p  style="font-size: smaller; font-weight:lighter;"> Richmond, VA</p></td>
+              <td class="showDetails"><a href="#" class="plain">Details <i class="fa fa-long-arrow-right fa-2xs"></i></a></td>
+            </tr>
+            <tr>
+              <td class="navFont showDate" >JAN 4 2022</td>
+              <td class="showVenue">The Bike Shop <p  style="font-size: smaller; font-weight:lighter;"> Chester, VA</p></td>
+              <td class="showDetails"><a href="#" class="plain">Details <i class="fa fa-long-arrow-right fa-2xs"></i></a></td>
+            </tr>
+            <tr>
+              <td class="navFont showDate" >JAN 13 2022</td>
+              <td class="showVenue">The Camel <p  style="font-size: smaller; font-weight:lighter;"> Richmond, VA</p></td>
+              <td class="showDetails"><a href="#" class="plain">Details <i class="fa fa-long-arrow-right fa-2xs"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--brandon dumb
+ 
+  <div class="slideshow">
+    <img src="img/dummy.jpg" id="dummy" style="height:400px;" />
+    <img src="img/dummyTitle.jpg" id="notdummy" style="display:none; height:400px;
+    " />
+</div>-->
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+
+
+  <!-- table https://getbootstrap.com/docs/4.0/components/collapse/
+  <div class="container-fluid text-center" style="background-color:#e5dab7">
+    <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseExample"
+      aria-expanded="false" aria-controls="collapseExample">
+      See All Shows
+    </button>
+  </div>
+  <div class="container-fluid mx-0 collapse outEverywhere" id="collapseExample">
+    <div class="row">
+      <div class="col-4 mx-auto">
+
+        <div class="card showCard">
+          <div class="card-header text-white text-center">
+            <p><b>Shows</b></p>
+            <div class="card-body text-white">
+              <dl class="row">
+                <dt class="col-6">Oct 27th</dt>
+                <dd class="col-6">Canal club</dd>
+                <dt class="col-6">Nov 13th</dt>
+                <dd class="col-6">Madison square</dd>
+                <dt class="col-6">Nov 27th</dt>
+                <dd class="col-6">James</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>-->
+
+
+
+
+
+
+  <!--footer and socials background-->
+  <footer>
+    <div class="container-fluid footerSocial" data-mdb-animation-on-scroll=" repeat" data-mdb-animation-reset="true"
+        data-mdb-animation="slide-in-up" ">
+<div class=" row mt-10 text-center">
         <div class="col-4 text-center">
-          <label class="col-12 col-form-label text-center helNue">Follow</label>
-          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-          <a class="btn btn-social-icon btn-spotify" href="http://spotify.com/"><i class="fa fa-spotify"></i></a>
+            <form>
+                <div class="form-group text-center">
+                    <label for="email" class="col col-form-label text-center helNue">Stay up to date!</label>
+                    <div class="row text-center">
+                        <div class=" offset-lg-2  col-sm-12 offset-md-1 col-md-5 ">
+                            <input type="text" class="form-control form-control-outline-light" id="email"
+                                name="email" placeholder="Email" />
+                        </div>
+
+                        <div>
+                            <div class=" col-sm-12 col-md-4  text-center">
+                                <button type="submit" id="addEmail" class="btn btn-outline-light">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-    <div class="col-4 text-center">
-    <label class="col-12 col-form-label text-center helNue">Contact Us</label>
-      <a role="button" class="btn btn-link" href="mailto:mail@mail.wack"><i class="fa fa-envelope-o"></i>band@gmail.com</a><br />
+
+
+        <div class="col-4 text-center d-none d-sm-block">
+            <label class="col-12 col-form-label text-center helNue">Follow</label>
+            <a class="btn btn-social-icon btn-instagram"
+                href="https://www.instagram.com/wearedisposed_hc/"><i
+                    class="fa-brands fa-2xl fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/wearedisposedhc"><i
+                    class="fa-brands fa-2xl fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-spotify"
+                href="https://open.spotify.com/album/6Xxu6Dts93rUvJKXmJroQk?referral=labelaffiliate&utm_source=1101lwiyByRP&utm_medium=Indie_Distrokid&utm_campaign=labelaffiliate"><i
+                    class="fa-brands fa-2xl fa-spotify"></i>
+            </a>
+            <a class="btn btn-social-icon btn-youtube"
+                href="https://m.youtube.com/playlist?list=OLAK5uy_mevKTwTY3tyC1l_DgbYpD118wvY0EEiE0"><i
+                    class="fa-brands fa-2xl fa-youtube"></i></a>
+            <a class="btn btn-social-icon btn-itunes"
+                href="https://music.apple.com/us/album/this-isnt-music-its-absolute-garbage-ep/1649866268?uo=4&app=itunes&at=1001lry3&ct=dashboard"><i
+                    class="fa-brands fa-2xl fa-apple"></i></a>
+        </div>
+        <div class="col-4 text-center d-sm-none ">
+            <label class="col-12 col-form-label text-center helNue">Follow</label>
+            <a class="btn btn-social-icon btn-instagram"
+                href="https://www.instagram.com/wearedisposed_hc/"><i
+                    class="fa-brands fa-2xl fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/wearedisposedhc"><i
+                    class="fa-brands fa-2xl fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-spotify"
+                href="https://open.spotify.com/album/6Xxu6Dts93rUvJKXmJroQk?referral=labelaffiliate&utm_source=1101lwiyByRP&utm_medium=Indie_Distrokid&utm_campaign=labelaffiliate"><i
+                    class="fa-brands fa-2xl fa-spotify"></i>
+            </a>
+            <a class="btn btn-social-icon btn-youtube"
+                href="https://m.youtube.com/playlist?list=OLAK5uy_mevKTwTY3tyC1l_DgbYpD118wvY0EEiE0"><i
+                    class="fa-brands fa-2xl fa-youtube"></i></a>
+            <a class="btn btn-social-icon btn-itunes"
+                href="https://music.apple.com/us/album/this-isnt-music-its-absolute-garbage-ep/1649866268?uo=4&app=itunes&at=1001lry3&ct=dashboard"><i
+                    class="fa-brands fa-2xl fa-apple"></i></a>
+        </div>
+
+
+        <div class="col-4 text-center d-none d-lg-block">
+            <label class="col-12 col-form-label text-center helNue">Contact Us</label>
+            <a role="button" class="btn btn-link plain" href="mailto:mail@mail.wack"><i
+                    class="fa-solid fa-envelope"></i>
+                wearedisposedhc@gmail.com</a>
+        </div>
+        <div class="col-4 text-center d-lg-none d-none d-sm-block">
+            <label class="col-12 col-form-label text-center helNue">Contact Us</label>
+            <a role="button" class="btn btn-link plainSm" href="mailto:mail@mail.wack"><i
+                    class="fa-solid fa-envelope"></i>
+                wearedisposedhc@gmail.com</p></a>
+        </div>
+        <div class="col-4 text-center d-sm-none">
+            <label class="col-12 col-form-label text-center helNue">Contact Us</label>
+            <a role="button" class="btn btn-link plainSm" href="mailto:mail@mail.wack"><i
+                    class="fa-solid fa-envelope fa-2xl"></i>
+                <p class="d-none d-sm-block">
+                    wearedisposedhc@gmail.com</p>
+            </a>
+        </div>
+
+    </div>
+    </div>
     </div>
 
-      </div>
-    </div>
-  </div>
-  </footer>
+</footer>
 
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

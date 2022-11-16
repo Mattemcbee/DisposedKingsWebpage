@@ -1,5 +1,4 @@
 .navbar {
-  background-color: red;
 }
 
 div {
@@ -16,10 +15,29 @@ div {
   top: 0;
 }
 
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70, 70, 70, 0.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
 .footerSocial {
   background-color: #e5dab7;
 }
+.btnSpace{
+  margin-bottom:30px;
+  \\color:#e5dab7;
 
+}
+
+.btnSpace2{
+  margin-top:10px;
+  \\color:#e5dab7;
+
+}
 .emailBtn {
   background-color: black;
   text-color: white;
@@ -39,6 +57,24 @@ div {
   font-size: 2vw;
 
 }
+.navFont {
+  font-family: 'Finlandica', sans-serif;
+  font-size: 2vw;
+}
+.navFontAllerta {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 2vw;
+}
+.navFontSaira {
+  font-family: 'Saira Stencil One', cursive;
+  font-size: 2vw;
+}
+
+.navFontWhite {
+  font-family: 'Finlandica', sans-serif;
+  font-size: 2vw;
+  color: white;
+}
 
 nav ul {
   list-style: none;
@@ -49,7 +85,7 @@ nav ul {
 }
 
 .outEverywhere {
-  background-image: url("/img/bandShot3.jpg");
+  background-image: url("/img/backGreyCroppedMid.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,22 +100,34 @@ nav ul {
 }
 
 .caroBack {
-  background-color: red;
   margin: 10px;
 }
 
 .showCard {
   background-color: black;
-  text-color: white;
-  border: solid 1px red;
+  color: white;
+}
+.cardBorder{
+  border: 2px solid red;
 }
 
+
 .showPrevCard {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   \\border: solid 2px white;
   padding-top: auto;
   padding-bottom: auto;
+}
+.showRealCard {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  \\border: solid 2px white;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.cardInner {
+  padding:0;
 }
 .showCardLines {
   background-color:white; 
@@ -98,12 +146,13 @@ nav ul {
 .card {
   width: 100%;
   height:auto;
-  margin: 0 auto;
+  margin: 15px auto 15px;
   padding:5px;
   /* Added */
   float: none;
   /* Added */
 }
+
 
 .imgAlbumNew {
   max-width: 30%;
@@ -119,6 +168,19 @@ nav ul {
   font-size: xx-large;
   font-family: 'Montserrat', sans-serif;
 
+}
+
+
+.bannerFont {
+  color: white;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Finlandica', sans-serif;
+  font-size: 3.5vw;
+}
+.lighter {
+  font-weight: lighter;
 }
 
 .plain {
@@ -176,4 +238,60 @@ h1 {
   font-size: xx-large;
   font-family: 'Montserrat', sans-serif;
 
+}
+
+
+.showCity {
+  font-size: smaller; 
+  font-weight:lighter;
+}
+.showDetails {
+ font-size:2vw; 
+  margin-top: auto;
+  margin-bottom: auto;
+}
+table tr:hover {
+ background-color:rgba(0, 0, 0, 0.6);
+}
+.tableSpace {
+  margin-top: 20px;
+  margin-bottom: auto;
+
+}
+
+.bandPicDiv {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.showDate {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: x-large;
+  font-weight: lighter;
+  vertical-align: middle;
+  text-align: left;
+}
+.showVenue {
+  vertical-align: middle
+}
+
+
+.arrowPlacement {
+ 
+  text-align: end;
+}
+.linkPlacement {
+  margin-top:auto;
+  margin-bottom:auto;
+  text-align: start;
+  margin-left:0;
+  padding-left:0;
+  font-family: 'Montserrat', sans-serif;
+}
+h7 {
+  font-size: 2vw;
+  font-weight: lighter;
+  
 }

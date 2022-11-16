@@ -2,7 +2,7 @@
   "name": "disposed",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
