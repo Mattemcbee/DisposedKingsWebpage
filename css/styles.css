@@ -45,6 +45,7 @@ div {
 
 .navColor {
   color: black;
+  font-size:2.5vw;
 }
 
 .emailBorder {
@@ -72,7 +73,12 @@ div {
 
 .navFontWhite {
   font-family: 'Finlandica', sans-serif;
-  font-size: 2vw;
+  font-size: 2.5vw;
+  color: white;
+}
+.navFontWhite1 {
+  font-family: 'Finlandica', sans-serif;
+  font-size: 3vw;
   color: white;
 }
 
@@ -85,20 +91,44 @@ nav ul {
 }
 
 .outEverywhere {
-  background-image: url("/img/backGreyCroppedMid.jpg");
+  background-image: url("/img/backGreyCropped2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.outEverywhere1 {
+  background-image: url("/img/backBasement1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+
+}
+.outEverywhere {
+  background-image: url("/img/backSpin.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.outEverywhere3 {
+  background-image: url("/img/drumShot.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .merchPreview {
   background-image: url("/img/backGreyCroppedMid.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 40px;
 }
-
+.merchPreview2 {
+  background-image: url("/img/drumBack.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .caroBack {
   margin: 10px;
 }
@@ -119,6 +149,10 @@ nav ul {
   padding-top: auto;
   padding-bottom: auto;
 }
+.showPrevCard:hover {
+  background-color:rgba(0, 0, 0, 0.8);
+ }
+
 .showRealCard {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
@@ -153,6 +187,9 @@ nav ul {
   /* Added */
 }
 
+.merchHover:hover {
+ background-color: rgba(255,255,255, 0.7);
+}
 
 .imgAlbumNew {
   max-width: 30%;

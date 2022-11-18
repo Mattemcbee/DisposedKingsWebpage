@@ -1,11 +1,6 @@
 
 //change style
-$(function () {
-    $('#addEmail').on('click', function () {
-        event.preventDefault();
-        console.log("thanks!");
-    });
-})
+
 
 $(document).ready(function() {
     
